@@ -1,8 +1,11 @@
 read -p "UPDATE APT-GET"
 apt-get update
 
+apt-get install g++ curl libssl-dev apache2-utils
+$ apt-get install git
+
 read -p "INSTALL GIT"
-apt-get install git
+apt-get install git-core
 
 read -p "INSTALL CURL"
 apt-get install curl
@@ -21,13 +24,13 @@ read -p "INSTALL PYTHON"
 apt-get install python-software-properties
 
 read -p "DOWNLOAD NODE FILE"
-wget http://nodejs.org/dist/v0.6.11/node-v0.6.11.tar.gz
+wget http://nodejs.org/dist/v0.10.4/node-v0.10.4.tar.gz
 
 read -p "UNZIP NODE FILE"
-tar xzf node-v0.6.11.tar.gz
+tar xzf node-v0.10.4.tar.gz
 
 read -p "RUN NODE MAKE SCRIPT"
-cd node-v0.6.11
+cd node-v0.10.4
 ./configure
 make
 
