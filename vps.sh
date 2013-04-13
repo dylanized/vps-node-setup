@@ -61,6 +61,9 @@ npm install -g node-inspector
 echo "ADD THESE LINES TO YOUR BASH PROFILE:"
 echo ". ~/nvm/nvm.sh"
 echo "[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion"
+echo "source ~/.dotfiles/dotfile"
+echo "source ~/.dotfiles/gitfile"
+echo "source ~/.dotfiles/nodefile"
 echo ""
 echo "All Done!"
 
