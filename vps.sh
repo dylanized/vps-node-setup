@@ -48,6 +48,15 @@ npm install forever -g
 read -p "INSTALL NODE-HTTP-PROXY (domain router)"
 npm install http-proxy
 
+read -p "INSTALL NODE INSPECTOR (debugging tool)"
+npm install -g node-inspector
+
+read -p "INSTALL UNDERSCORE.JS (commonly used utility belt)"
+npm install -g underscore
+
+read -p "INSTALL LO-DASH (better utility belt)"
+npm install -g lodash
+
 read -p "INSTALL EXPRESS (commonly used web framework)"
 npm install -g express
 
@@ -56,9 +65,6 @@ npm -g install sails
 
 read -p "INSTALL JAM (frontend package manager)"
 npm install -g jamjs
-
-read -p "INSTALL NODE INSPECTOR (debugging tool)"
-npm install -g node-inspector
 
 echo "ADD THESE LINES TO YOUR BASH PROFILE:"
 echo ". ~/nvm/nvm.sh"
