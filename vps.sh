@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 read -p "UPDATE APT-GET"
 apt-get update
 
