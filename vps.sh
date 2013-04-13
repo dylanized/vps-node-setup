@@ -57,6 +57,12 @@ npm install -g underscore
 read -p "INSTALL LO-DASH (better utility belt)"
 npm install -g lodash
 
+read -p "INSTALL YEOMAN (commonly used build tools)"
+npm install -g yeoman
+
+read -p "INSTALL SHELLJS (Javascript shell wrapper)"
+npm install -g shelljs
+
 read -p "INSTALL EXPRESS (commonly used web framework)"
 npm install -g express
 
