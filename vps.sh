@@ -1,11 +1,8 @@
 read -p "UPDATE APT-GET"
 apt-get update
 
-apt-get install g++ curl libssl-dev apache2-utils
-$ apt-get install git
-
 read -p "INSTALL GIT"
-apt-get install git-core
+apt-get install git
 
 read -p "INSTALL CURL"
 apt-get install curl
