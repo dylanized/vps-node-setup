@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+NODE_VERSION=0.10.4
+
 read -p "UPDATE APT-GET"
 apt-get update
 
@@ -23,13 +25,13 @@ read -p "INSTALL PYTHON"
 apt-get install python-software-properties
 
 read -p "DOWNLOAD NODE FILE"
-wget http://nodejs.org/dist/v0.10.4/node-v0.10.4.tar.gz
+wget http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz
 
 read -p "UNZIP NODE FILE"
-tar xzf node-v0.10.4.tar.gz
+tar xzf node-v$NODE_VERSION.tar.gz
 
 read -p "RUN NODE MAKE SCRIPT"
-cd node-v0.10.4
+cd node-v$NODE_VERSION
 ./configure
 make
 
