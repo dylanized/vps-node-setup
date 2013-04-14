@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 NODE_VERSION=0.10.4
+BASH_PROFILE=~/.profile
 
 read -p "UPDATE APT-GET"
 apt-get update
@@ -74,13 +75,26 @@ npm -g install sails
 read -p "INSTALL JAM (frontend package manager)"
 npm install -g jamjs
 
-echo "ADD THESE LINES TO YOUR BASH PROFILE:"
-echo ". ~/nvm/nvm.sh"
-echo "[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion"
-echo "source ~/.dotfiles/dotfile"
-echo "source ~/.dotfiles/gitfile"
-echo "source ~/.dotfiles/nodefile"
-echo ""
+read -p "MODIFY BASH PROFILE (don't worry, it will be backed up)"
+cp $BASH_PROFILE $BASH_PROFILE.orig
+
+#add these files to $BASH_PROFILE
+# # NVM BASH COMPLETION
+# source ~/nvm/nvm.sh
+# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+#
+# # LOAD DOTFILES
+# source ~/.dotfiles/dotfile
+# source ~/.dotfiles/gitfile
+# source ~/.dotfiles/nodefile
+#
+# # UNIX OVERRIDES
+# PS1='\u@\[\e[0;35m\]\h:\[\e[0;36m\]\w\[\e[0;32m\]$(__git_ps1 " [%s]")\[\e[m\]$'
+# alias l='echo ""; ls -halF --color=auto; echo "";'
+# alias profile="vim $BASH_PROFILE"
+# alias reload="source $BASH_PROFILE"
+#
+
 echo "All Done!"
 
 # Node instructions from:
