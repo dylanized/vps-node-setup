@@ -78,7 +78,8 @@ npm install -g jamjs
 read -p "MODIFY BASH PROFILE (don't worry, it will be backed up)"
 cp $BASH_PROFILE $BASH_PROFILE.orig
 
-#add these files to $BASH_PROFILE
+# ADD THESE LINES TO $BASH_PROFILE
+#
 # # NVM BASH COMPLETION
 # source ~/nvm/nvm.sh
 # [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
@@ -88,9 +89,7 @@ cp $BASH_PROFILE $BASH_PROFILE.orig
 # source ~/.dotfiles/gitfile
 # source ~/.dotfiles/nodefile
 #
-# # UNIX OVERRIDES
-# PS1='\u@\[\e[0;35m\]\h:\[\e[0;36m\]\w\[\e[0;32m\]$(__git_ps1 " [%s]")\[\e[m\]$'
-# alias l='echo ""; ls -halF --color=auto; echo "";'
+# # PROFILE OVERRIDES, IF NOT ~/.bash_profile
 # alias profile="vim $BASH_PROFILE"
 # alias reload="source $BASH_PROFILE"
 #
