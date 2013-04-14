@@ -7,7 +7,7 @@ require('shelljs');
 
 var sites = require('/sites/.config');
 
-# INSTALL EACH SITE
+// install each site
 
 _.each(sites, function() {
 	if (!folder) shell('mkdir /sites/' + name + '.' + ext);
