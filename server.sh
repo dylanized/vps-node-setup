@@ -75,9 +75,7 @@ read -p "INSTALL JAM (frontend package manager)"
 npm install -g jamjs
 
 echo ""
-echo "All Done!"
-echo ""
-echo "Now run profile.sh and sites.sh"
+echo "All libraries installed! Now run profile.sh and sites.sh"
 
 # Node instructions from:
 # http://qugstart.com/blog/node-js/how-to-install-node-js-on-ubuntu-and-create-an-app-in-5-minutes/
