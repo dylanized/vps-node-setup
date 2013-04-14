@@ -1,7 +1,6 @@
 #!/bin/bash 
 
 NODE_VERSION=0.10.4
-BASH_PROFILE=~/.profile
 
 read -p "UPDATE APT-GET"
 apt-get update
@@ -78,7 +77,7 @@ npm install -g jamjs
 echo ""
 echo "All Done!"
 echo ""
-echo "Now run modify_profile.sh and setup_sites.sh"
+echo "Now run profile.sh and sites.sh"
 
 # Node instructions from:
 # http://qugstart.com/blog/node-js/how-to-install-node-js-on-ubuntu-and-create-an-app-in-5-minutes/
