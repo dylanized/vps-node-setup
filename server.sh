@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 NODE_VERSION=0.10.4
+PROFILE=~/.bash_profile
 
 read -p "UPDATE APT-GET"
 apt-get update
@@ -73,8 +74,6 @@ npm -g install sails
 
 read -p "INSTALL JAM (frontend package manager)"
 npm install -g jamjs
-
-PROFILE=~/.bash_profile
 
 read -p "ADD NVM BASH COMPLETION TO BASH PROFILE"
 echo "" >> $PROFILE
