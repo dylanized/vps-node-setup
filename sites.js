@@ -1,3 +1,5 @@
+// THIS IS TOTALLY INCOMPLETE AND REALLY JUST PSEUDOCODE RIGHT NOW
+
 // load libs
 
 require('lodash');
