@@ -74,8 +74,20 @@ npm -g install sails
 read -p "INSTALL JAM (frontend package manager)"
 npm install -g jamjs
 
-echo ""
-echo "All libraries installed! Now run profile.sh and sites.sh"
+PROFILE=~/.bash_profile
+
+read -p "ADD NVM BASH COMPLETION TO BASH PROFILE"
+echo "" >> $PROFILE
+echo "# NVM BASH COMPLETION" >> $PROFILE
+echo "source ~/nvm/nvm.sh" >> $PROFILE
+echo "[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion" >> $PROFILE
+
+read -p "ADD DOTFILE LINK TO BASH PROFILE"
+echo "" >> $PROFILE
+echo "# LOAD DOTFILES" >> $PROFILE
+echo "source ~/.dotfiles/dotfile" >> $PROFILE
+
+echo "Server is setup!"
 
 # Node instructions from:
 # http://qugstart.com/blog/node-js/how-to-install-node-js-on-ubuntu-and-create-an-app-in-5-minutes/
