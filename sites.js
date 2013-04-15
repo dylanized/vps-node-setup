@@ -7,7 +7,7 @@ require('shelljs');
 
 // load config
 
-var sites = require('/sites/.config');
+var sites = require('/sites/.config.json');
 
 // install each site
 
@@ -18,4 +18,7 @@ _.each(sites, function() {
 		cd /sites/.repos
 		bare $name ../$name.$ext
 	}
+	// launch forever
 }
+
+// launch proxy
