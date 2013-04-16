@@ -79,6 +79,8 @@ read -p "ADD DOTFILE LINK TO BASH PROFILE"
 echo "" >> $PROFILE
 echo "# LOAD DOTFILES" >> $PROFILE
 echo "source ~/.dotfiles/dotfile" >> $PROFILE
+echo "source ~/.dotfiles/gitfile" >> $PROFILE
+echo "source ~/.dotfiles/nodefile" >> $PROFILE
 
 echo "Server is setup!"
 
