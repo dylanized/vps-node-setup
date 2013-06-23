@@ -14,7 +14,7 @@ apt-get install curl
 
 read -p "INSTALL HUB (Github helper)"
 curl http://defunkt.io/hub/standalone -sLo /bin/hub
-chmod +x ~/bin/hub
+chmod +x /bin/hub
 
 read -p "INSTALL DOTFILES"
 git clone git://github.com/dylanized/dotfiles.git ~/.dotfiles
@@ -40,7 +40,7 @@ read -p "RUN MAKE INSTALL"
 make install
 
 read -p "INSTALL NPM (Node Package Manager)"
-curl http://npmjs.org/install.sh | sh
+curl https://npmjs.org/install.sh | sh
 
 read -p "INSTALL NVM (Node Version Manager)"
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
