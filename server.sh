@@ -47,10 +47,10 @@ read -p "INSTALL NVM (Node Version Manager)"
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 read -p "INSTALL FOREVER (process watcher)"
-npm install forever -g
+npm install -g forever
 
 read -p "INSTALL NODE-HTTP-PROXY (domain router)"
-npm install http-proxy
+npm install -g http-proxy
 
 read -p "INSTALL NODE INSPECTOR (debugging tool)"
 npm install -g node-inspector
@@ -66,6 +66,10 @@ npm install -g yeoman
 
 read -p "INSTALL SHELLJS (Javascript shell wrapper)"
 npm install -g shelljs
+
+read -p "INSTALL Grunt"
+npm install -g grunt
+npm install -g grunt-cli
 
 read -p "INSTALL EXPRESS (commonly used web framework)"
 npm install -g express
@@ -89,6 +93,8 @@ echo '"\e[A": history-search-backward' >> $INPUTRC
 echo '"\e[B": history-search-forward' >> $INPUTRC
 echo 'set show-all-if-ambiguous on' >> $INPUTRC
 echo 'set completion-ignore-case on' >> $INPUTRC
+
+read -p "REMEMBER TO CHANGE YOUR COMPUTER NAME"
 
 echo "Server is setup!"
 
