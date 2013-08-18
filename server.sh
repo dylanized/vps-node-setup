@@ -18,8 +18,8 @@ read -p "INSTALL RUBY"
 apt-get install ruby$RUBY_VERSION
 
 read -p "INSTALL HUB (Github helper)"
-curl http://defunkt.io/hub/standalone -sLo /bin/hub
-chmod +x /bin/hub
+curl http://hub.github.com/standalone -sLo ~/bin/hub
+chmod +x ~/bin/hub
 
 read -p "INSTALL DOTFILES"
 git clone git://github.com/dylanized/dotfiles.git ~/.dotfiles
@@ -54,7 +54,7 @@ read -p "INSTALL LO-DASH (better utility belt)"
 npm install -g lodash
 
 read -p "INSTALL YEOMAN (commonly used build tools)"
-npm install -g yeoman
+npm install -g yo
 
 read -p "INSTALL SHELLJS (Javascript shell wrapper)"
 npm install -g shelljs
