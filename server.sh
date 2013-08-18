@@ -24,21 +24,12 @@ read -p "INSTALL LIBRARIES"
 apt-get install g++ curl libssl-dev apache2-utils
 
 read -p "INSTALL PYTHON"
-apt-get install python-software-properties
+apt-get install python-software-properties python g++ make
 
-read -p "DOWNLOAD NODE FILE"
-wget http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz
-
-read -p "UNZIP NODE FILE"
-tar xzf node-v$NODE_VERSION.tar.gz
-
-read -p "RUN NODE MAKE SCRIPT"
-cd node-v$NODE_VERSION
-./configure
-make
-
-read -p "RUN MAKE INSTALL"
-make install
+read -p "DOANLOAD AND INSTALL NODE"
+add-apt-repository ppa:chris-lea/node.js
+apt-get update
+apt-get install nodejs
 
 read -p "INSTALL NVM (Node Version Manager)"
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
