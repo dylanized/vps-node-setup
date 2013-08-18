@@ -1,7 +1,8 @@
 #!/bin/bash 
 
-NODE_VERSION=0.10.4
+NODE_VERSION=0.10.15
 PROFILE=~/.bash_profile
+INPUTRC=~/.inputrc
 
 read -p "UPDATE APT-GET"
 apt-get update
@@ -81,6 +82,13 @@ echo "# LOAD DOTFILES" >> $PROFILE
 echo "source ~/.dotfiles/dotfile" >> $PROFILE
 echo "source ~/.dotfiles/gitfile" >> $PROFILE
 echo "source ~/.dotfiles/nodefile" >> $PROFILE
+
+read -p "CREATE .INPUTRC FILE WITH BASH SEARCHING"
+t $INPUTRC
+echo '"\e[A": history-search-backward' >> $INPUTRC
+echo '"\e[B": history-search-forward' >> $INPUTRC
+echo 'set show-all-if-ambiguous on' >> $INPUTRC
+echo 'set completion-ignore-case on' >> $INPUTRC
 
 echo "Server is setup!"
 
