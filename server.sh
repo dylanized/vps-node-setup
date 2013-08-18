@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 NODE_VERSION=0.10.15
+RUBY_VERSION=1.9.1
 PROFILE=~/.bash_profile
 INPUTRC=~/.inputrc
 
@@ -13,9 +14,12 @@ apt-get install git
 read -p "INSTALL CURL"
 apt-get install curl
 
+read -p "INSTALL RUBY"
+apt-get install ruby$RUBY_VERSION
+
 read -p "INSTALL HUB (Github helper)"
 curl http://defunkt.io/hub/standalone -sLo /bin/hub
-chmod +x ~/bin/hub
+chmod +x /bin/hub
 
 read -p "INSTALL DOTFILES"
 git clone git://github.com/dylanized/dotfiles.git ~/.dotfiles
