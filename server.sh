@@ -59,7 +59,7 @@ npm install -g yo
 read -p "INSTALL SHELLJS (Javascript shell wrapper)"
 npm install -g shelljs
 
-read -p "INSTALL Grunt"
+read -p "INSTALL GRUNT"
 npm install -g grunt
 npm install -g grunt-cli
 
