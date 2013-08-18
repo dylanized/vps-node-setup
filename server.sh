@@ -40,9 +40,6 @@ make
 read -p "RUN MAKE INSTALL"
 make install
 
-read -p "INSTALL NPM (Node Package Manager)"
-curl http://npmjs.org/install.sh | sh
-
 read -p "INSTALL NVM (Node Version Manager)"
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
